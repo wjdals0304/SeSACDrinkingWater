@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64226BF02712CD8700525C18 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64226BEF2712CD8700525C18 /* IQKeyboardManagerSwift */; };
+		64226BF32713D27700525C18 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 64226BF22713D27700525C18 /* TextFieldEffects */; };
 		642CBC5D271130F400E7AB0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CBC5C271130F400E7AB0B /* AppDelegate.swift */; };
 		642CBC5F271130F400E7AB0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CBC5E271130F400E7AB0B /* SceneDelegate.swift */; };
 		642CBC61271130F400E7AB0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CBC60271130F400E7AB0B /* ViewController.swift */; };
 		642CBC64271130F400E7AB0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642CBC62271130F400E7AB0B /* Main.storyboard */; };
 		642CBC66271130F500E7AB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642CBC65271130F500E7AB0B /* Assets.xcassets */; };
 		642CBC69271130F500E7AB0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642CBC67271130F500E7AB0B /* LaunchScreen.storyboard */; };
+		642CBC712711314800E7AB0B /* DrinkWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CBC702711314800E7AB0B /* DrinkWaterViewController.swift */; };
+		642CBC732711315B00E7AB0B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CBC722711315B00E7AB0B /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		642CBC65271130F500E7AB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642CBC68271130F500E7AB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		642CBC6A271130F500E7AB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642CBC702711314800E7AB0B /* DrinkWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterViewController.swift; sourceTree = "<group>"; };
+		642CBC722711315B00E7AB0B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64226BF02712CD8700525C18 /* IQKeyboardManagerSwift in Frameworks */,
+				64226BF32713D27700525C18 /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,8 @@
 				642CBC5C271130F400E7AB0B /* AppDelegate.swift */,
 				642CBC5E271130F400E7AB0B /* SceneDelegate.swift */,
 				642CBC60271130F400E7AB0B /* ViewController.swift */,
+				642CBC702711314800E7AB0B /* DrinkWaterViewController.swift */,
+				642CBC722711315B00E7AB0B /* ProfileViewController.swift */,
 				642CBC62271130F400E7AB0B /* Main.storyboard */,
 				642CBC65271130F500E7AB0B /* Assets.xcassets */,
 				642CBC67271130F500E7AB0B /* LaunchScreen.storyboard */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = SeSACDrinkingWater;
+			packageProductDependencies = (
+				64226BEF2712CD8700525C18 /* IQKeyboardManagerSwift */,
+				64226BF22713D27700525C18 /* TextFieldEffects */,
+			);
 			productName = SeSACDrinkingWater;
 			productReference = 642CBC59271130F400E7AB0B /* SeSACDrinkingWater.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = 642CBC50271130F400E7AB0B;
+			packageReferences = (
+				64226BEE2712CD8700525C18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				64226BF12713D27700525C18 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+			);
 			productRefGroup = 642CBC5A271130F400E7AB0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +158,9 @@
 			files = (
 				642CBC61271130F400E7AB0B /* ViewController.swift in Sources */,
 				642CBC5D271130F400E7AB0B /* AppDelegate.swift in Sources */,
+				642CBC732711315B00E7AB0B /* ProfileViewController.swift in Sources */,
 				642CBC5F271130F400E7AB0B /* SceneDelegate.swift in Sources */,
+				642CBC712711314800E7AB0B /* DrinkWaterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +378,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64226BEE2712CD8700525C18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		64226BF12713D27700525C18 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64226BEF2712CD8700525C18 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64226BEE2712CD8700525C18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		64226BF22713D27700525C18 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64226BF12713D27700525C18 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 642CBC51271130F400E7AB0B /* Project object */;
 }
